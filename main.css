@@ -12,6 +12,7 @@ body {
 }
 .back-image {
     position: absolute;
+    bottom: 80px;
 }
 .wrap p {
  text-align: center;
