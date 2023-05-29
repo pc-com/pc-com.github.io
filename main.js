@@ -1,6 +1,6 @@
 $(window).on('load', function () {
   var element = $(".typing");
-  var thisChild = ""
+  var thisChild = "";
   element.each(function () {
     var text = $(this).html();
     var textbox = "";
@@ -13,11 +13,11 @@ $(window).on('load', function () {
     });
     $(this).html(textbox);
   });
-   $(element).each(function () {
-      thisChild = $(this).children();
-      thisChild.each(function (i) {
-        var time = 100;
-        $(this).delay(time * i).fadeIn(time);
-      });
+  element.each(function () {
+    thisChild = $(this).children();
+    thisChild.each(function (i) {
+      var time = 100;
+      $(this).delay(time * i).fadeIn(time);
+    });
   });
 });
