@@ -14,10 +14,10 @@ body {
 }
 .wrap p {
  text-align: center;
- padding: 20px;
+ padding: 10px;
     color: #CCC;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     text-shadow:
             3px 3px 3px #000, -3px -3px 3px #000,
            -3px 3px 3px #000,  3px -3px 3px #000,
