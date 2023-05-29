@@ -10,6 +10,7 @@ body {
   max-width: 300px;
 }
 .wrap p {
+ text-align: center;
  color: #fff;
 }
 .typing {
