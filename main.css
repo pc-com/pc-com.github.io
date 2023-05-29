@@ -14,7 +14,16 @@ body {
 }
 .wrap p {
  text-align: center;
- color: #fff;
+ padding: 10px;
+    color: #CCC;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow:
+           1px 1px 0px #000, -1px -1px 0px #000,
+          -1px 1px 0px #000,  1px -1px 0px #000,
+           1px 0px 0px #000, -1px  0px 0px #000,
+           0px 1px 0px #000,  0px -1px 0px #000;
+    margin: 0;
 }
 .typing {
   font-size: 16px;
