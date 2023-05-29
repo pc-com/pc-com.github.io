@@ -4,3 +4,28 @@ body {
 .top-text {
     color: #99aab5;
   }
+/*タイピング風用*/
+.wrap {
+  margin: 0 auto;
+  max-width: 300px;
+}
+.typing {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  word-break : break-all;
+}
+.typing span{
+    display: none;
+}
+.typing:after {
+  content: "|";
+  animation: typingCursor .8s ease infinite;
+}
+@keyframes typingCursor {
+  from　{
+    opacity:0;
+  }
+  to{
+    opacity:1
+  }
+}
