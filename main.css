@@ -10,7 +10,7 @@ body {
   max-width: 300px;
   position: relative;
 }
-.back-image {
+.absolute {
     position: absolute;
     bottom: 80px;
 }
