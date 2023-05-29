@@ -1,12 +1,14 @@
+plugins:
+  - jekyll-titles-from-headings
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass
   sourcemap: always
   style: compact
 
-gems:
-  - jekyll-sitemap
-
 titles_from_headings:
   enabled: false
 
+readme_index:
+  enabled: false
