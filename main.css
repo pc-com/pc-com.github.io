@@ -8,6 +8,10 @@ body {
 .wrap {
   margin: 0 auto;
   max-width: 300px;
+  position: relative;
+}
+.back-image {
+    position: absolute;
 }
 .wrap p {
  text-align: center;
