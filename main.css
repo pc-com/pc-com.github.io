@@ -8,6 +8,7 @@ body {
 .wrap {
   margin: 0 auto;
   max-width: 300px;
+  color: #fff;
 }
 .typing {
   font-size: 16px;
