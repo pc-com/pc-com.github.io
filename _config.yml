@@ -3,4 +3,5 @@ sass:
   sourcemap: always
   style: compact
 
-
+gems:
+  - jekyll-sitemap
