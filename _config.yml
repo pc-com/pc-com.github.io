@@ -6,3 +6,7 @@ sass:
 
 gems:
   - jekyll-sitemap
+
+titles_from_headings:
+  enabled: false
+
