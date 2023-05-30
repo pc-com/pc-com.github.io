@@ -1,14 +1,20 @@
-plugins:
-  - jekyll-titles-from-headings
-  - jekyll-sitemap
+exclude:
+  - node_modules
+  - script
 
 sass:
-  sass_dir: _sass
-  sourcemap: always
-  style: compact
+  style: :compressed
 
-titles_from_headings:
-  enabled: false
+theme: jekyll-theme-primer
 
-readme_index:
-  enabled: false
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "feature/kurages"
+    path: "/"
+  repository_url: "https://github.com/pages-themes/primer"
+  
+title: パソコミ
+description: パソコミ
