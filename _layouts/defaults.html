@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPEhtml>
+<htmllang="{{page.lang|default:site.lang|default:"en-US"}}">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <title>{{ page.title }}</title>
-    <!-- <title>💻【パソコミ】💻パソコンコミュニティ</title> -->
-    <meta property="og:title" content="💻【パソコミ】💻パソコンコミュニティ">
-    <meta property="og:description" content="💻【パソコミ】💻パソコンコミュニティ\n(参加はこちら)[https://discord.gg/uxENZNrk5n]">
-    <meta property="og:color" content="#3fc3ff">
+	<metacharset="UTF-8">
+	<metahttp-equiv="X-UA-Compatible"content="IE=edge">
+	<metaname="viewport"content="width=device-width,initial-scale=1">
+{%seo%}
+	<linkrel="stylesheet"href="{{"/assets/css/style.css?v="|append:site.github.build_revision|relative_url}}">
 </head>
 <body>
-    <header>
-        <nav class="my-nav">
-            <a href="/">Home</a>
-            <ul>
-                <li><a href="/">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    {{ content }}
+{{content}}
 </body>
 </html>
