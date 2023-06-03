@@ -8,7 +8,33 @@ body {
     color: #99aab5;
   }
 /*ヘッダー*/
+.header01 {
+  padding: 16px 24px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.header01-logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header01-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header01-item--contact {
+  background-color: #2486d1;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
 /*タイピング風用*/
 .wrap {
   margin: 0 auto;
