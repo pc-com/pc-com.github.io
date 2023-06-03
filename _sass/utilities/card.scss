@@ -124,7 +124,7 @@
 
 	.profile-body {
 		background: #18191c;
-		border-radius: 7px;
+		border-radius: 2px;
 		padding: 13px;
 		margin-top: 40px;
 		.displayname {
@@ -142,7 +142,7 @@
 			font-size: 10px;
 			flex-direction: row;
 			align-items: center;
-
+			display: flex;
 			span {
 				color: #b9bbbe;
 			}
