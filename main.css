@@ -7,6 +7,19 @@ body {
 .top-text {
     color: #99aab5;
   }
+.button {
+  background-color: #fff;
+  border: double 6px #3cb371;
+  color: #3cb371;
+  border-radius: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.button:hover {
+  color: #3cb371;
+  background-color: #f0fff0;
+}
 /*タイピング風用*/
 .wrap {
   margin: 0 auto　80px;
