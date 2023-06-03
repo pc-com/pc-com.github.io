@@ -133,12 +133,14 @@ body {
 .header01-logo {
   font-weight: bold;
   font-size: 20px;
+  color: #fff;
 }
 
 .header01-list {
   display: flex;
   align-items: center;
   gap: 32px;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   list-style-position: initial;
