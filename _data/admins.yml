@@ -1,3 +1,11 @@
+- id: "えま"
+  tag: "#7000"
+  icon: "https://cdn.discordapp.com/avatars/864735082732322867/2390555f2f80bd5c0440568acfe7314f.png"
+  comment: "ちんぽにゃ!!"
+  since: "2017.04.24"
+  banner:
+    url: "https://cdn.discordapp.com/banners/864735082732322867/a_7825a3c729f951084b48dc74d1cd3e85.gif"
+
 - id: "るな"
   tag: "#0256"
   icon: "https://cdn.discordapp.com/avatars/510590521811402752/a_a27ee71ef4f7f45ee75f85a502ee3fc4.gif"
@@ -8,8 +16,10 @@
 
 - id: "kurages"
   tag: "#0255"
-  icon: "https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp?size=80"
+  icon: "https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp"
   comment: "くらげちゃんだおはーと"
   since: "2022.07.24"
+  banner:
+    color: "#57a5ff"
 
 
