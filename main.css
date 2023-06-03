@@ -10,7 +10,8 @@ body {
 /*ヘッダー*/
 .brand {
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .button--icon {
   min-width: initial;
