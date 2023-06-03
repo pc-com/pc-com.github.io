@@ -418,7 +418,7 @@ html {
 }
 
 .nitro-card .card-body .profile-body {
-  background: #ff236b;
+  background: #18191c91;
 }
 
 .nitro-card .card-body .profile-header .profil-logo {
@@ -437,7 +437,7 @@ html {
   z-index: -1;
   margin: -6px;
   border-radius: 50%;
-  background-color: #ff236b;
+  background-color: transparent;
 }
 
 .nitro-card .card-body .profile-header .badges-container {
