@@ -10,7 +10,7 @@ body {
 /*タイピング風用*/
 .wrap {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 500px;
 }
 .wrap p {
  text-align: center;
