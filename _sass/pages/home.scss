@@ -1,0 +1,47 @@
+.home {
+
+	/*タイピング風用*/
+	.wrap {
+		margin: 0 auto;
+		max-width: 800px;
+	}
+
+	.wrap p {
+		text-align: center;
+		padding: 15px;
+		color: #CCC;
+		font-weight: bold;
+		font-size: 15px;
+		text-shadow:
+			3px 3px 3px #000, -3px -3px 3px #000,
+			-3px 3px 3px #000, 3px -3px 3px #000,
+			3px 0px 3px #000, -3px -0px 3px #000,
+			0px 3px 3px #000, 0px -3px 3px #000;
+		margin: 0;
+	}
+
+	.typing {
+		font-size: 16px;
+		letter-spacing: 0.2em;
+		word-break: break-all;
+	}
+
+	.typing span {
+		display: none;
+	}
+
+	.typing:after {
+		content: "|";
+		animation: typingCursor .8s ease infinite;
+	}
+
+	@keyframes typingCursor {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1
+		}
+	}
+}
