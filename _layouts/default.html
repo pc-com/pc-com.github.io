@@ -18,16 +18,18 @@
 	<script src='{{"/assets/js/main.js"|relative_url}}'></script>
 </head>
 <body>
-	<header class="header01">
-		<h1 class="header01-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
-		<nav class="header01-nav">
-			<ul class="header01-list">
-				<li class="header01-item"><a href='{{"/news"|relative_url}}'>お知らせ</a></li>
-				<li class="header01-item"><a href="">運営紹介</a></li>
-				<li class="header01-item"><a href="">その他</a></li>
-				<li class="header01-item header01-item--contact"><a href="https://discord.gg/uxENZNrk5n">参加</a></li>
-			</ul>
-		</nav>
+	<header>
+		<div class="header">
+			<h1 class="header-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
+			<nav class="header-nav">
+				<ul class="header-list">
+					<li class="header-item"><a href='{{"/news"|relative_url}}'>お知らせ</a></li>
+					<li class="header-item"><a href="">運営紹介</a></li>
+					<li class="header-item"><a href="">その他</a></li>
+					<li class="header-item header-item--contact"><a href="https://discord.gg/uxENZNrk5n">参加</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main class="{{ page.id }}">
 	{{content}}
