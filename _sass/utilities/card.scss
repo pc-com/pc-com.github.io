@@ -124,25 +124,31 @@
 
 	.profile-body {
 		background: #18191c;
-		border-radius: 2px;
+		border-radius: 5px;
 		padding: 13px;
 		margin-top: 40px;
 		.displayname {
 			color: #eeeeee;
+			margin-bottom: 20px;
+			font-weight: 600;
 			font-size: 1.3rem;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
+
 			span {
 				color: #b9bbbe;
 			}
 		}
 		.username {
 			color: #eeeeee;
-			font-size: 0.3rem;
+			margin-bottom: 20px;
+			font-weight: 600;
+			font-size: 0.5rem;
+			display: flex;
 			flex-direction: row;
 			align-items: center;
-			display: flex;
+
 			span {
 				color: #b9bbbe;
 			}
