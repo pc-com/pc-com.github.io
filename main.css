@@ -197,13 +197,3 @@ body {
     opacity:1
   }
 }
-/*home (index)*/
-#home {
-  background-image: url(background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*news*/
-#news {
-  background-color: #313338;
-}
