@@ -10,7 +10,7 @@ body {
   }
 /*ヘッダー*/
 .header01 {
-  padding: 16px 24px;
+  padding: 10px 20px;
   background-color: #bfffe8;
   display: flex;
   justify-content: space-between;
