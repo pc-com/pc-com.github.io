@@ -5,6 +5,9 @@
   since: "2017.04.24"
   banner:
     color: "#ff236c"
+  color:
+    primary: "#55a4ff"
+    accent: "#9c999a"
 
 - id: "るな"
   tag: "#0256"
@@ -13,6 +16,9 @@
   since: "2018.11.10"
   banner:
     color: "#55a4ff"
+  color:
+    primary: "#55a4ff"
+    accent: "#9c999a"
 
 - id: "kurages"
   tag: "#0255"
@@ -21,5 +27,8 @@
   since: "2022.07.24"
   banner:
     color: "#57a5ff"
+  color:
+    primary: "#55a4ff"
+    accent: "#9c999a"
 
 
