@@ -18,8 +18,15 @@
 	{% for file in page.scripts %}
 	<script src='{{"/assets/js/" | append: file |relative_url}}'></script>
 	{% endfor %}
+	<style>
+		body {
+			background-image: url("{{'/assets/images/background.png'|relative_url}}");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 </head>
-<body {% if page.style %}style='{{ page.style }}'{% endif %}>
+<body>
 	<header>
 		<div class="header">
 			<h1 class="header-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
