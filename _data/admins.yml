@@ -6,8 +6,8 @@
   banner:
     color: "#ff236c"
   color:
-    primary: "#55a4ff"
-    accent: "#9c999a"
+    primary: "#ff236b"
+    accent: "#a238ff"
 
 - id: "るな"
   tag: "#0256"
