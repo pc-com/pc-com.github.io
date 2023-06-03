@@ -9,7 +9,7 @@ html , body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: map-get($map: "bg-base", $key: $colors);
+	background-color: map-get($map: $colors, $key: "bg-base");
 }
 
 main {

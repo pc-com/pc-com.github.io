@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: map-get($map: "bg-accent", $key: $colors);
+	background-color: map-get($map: $colors, $key: "bg-accent");
 
 	.header-logo {
 		font-weight: bold;
