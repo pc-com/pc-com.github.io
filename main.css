@@ -9,7 +9,7 @@ body {
   }
 /*タイピング風用*/
 .wrap {
-  margin: 0 auto　;
+  margin: 0 auto　80px;
   max-width: 600px;
 }
 .wrap p {
