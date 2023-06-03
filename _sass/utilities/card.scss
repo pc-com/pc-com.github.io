@@ -53,7 +53,7 @@
 		width: calc(100% - 30px);
 		top: -50px;
 
-		.profil-logo {
+		.profile-logo {
 			position: relative;
 			border: 6px solid #292b2f;
 			border-radius: 50%;
@@ -66,7 +66,7 @@
 			}
 
 			&::before {
-				content: "See Profil";
+				content: "See Profile";
 				position: absolute;
 				right: 0;
 				top: 0;
