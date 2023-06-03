@@ -1,5 +1,6 @@
 - id: "えま"
   tag: "#7000"
+  name: "えま\k"
   icon: "https://cdn.discordapp.com/avatars/864735082732322867/2390555f2f80bd5c0440568acfe7314f.png"
   comment: "ちんぽにゃ!!"
   since: "2017.04.24"
@@ -11,6 +12,7 @@
 
 - id: "るな"
   tag: "#0256"
+  name: "ベイブレードるな"
   icon: "https://cdn.discordapp.com/avatars/510590521811402752/a_a27ee71ef4f7f45ee75f85a502ee3fc4.gif"
   comment: "るなたんだお♡"
   since: "2018.11.10"
@@ -22,6 +24,7 @@
 
 - id: "kurages"
   tag: "#0255"
+  name: "ベイブレードもやし猫"
   icon: "https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp"
   comment: "くらげちゃんだおはーと"
   since: "2022.07.24"
