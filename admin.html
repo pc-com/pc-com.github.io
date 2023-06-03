@@ -4,45 +4,8 @@ title: 運営紹介
 id: admin
 ---
 <div class="card-container">
-    <!-- Third Card -->
-    <div class="card">
-        <div class="card-header">
-            <div class="banner" style="background-color: #9c999a;"></div>
-        </div>
-        <div class="card-body">
-            <div class="profile-header">
-                <div class="profile-logo">
-                    <img src="https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp?size=80" />
-                </div>
-                <div class="badges-container">
-                    <div class="badge-item">
-                        <img src='{{"/assets/images/badges/bravery.webp"|relative_url}}' alt="" />
-                    </div>
-                    <div class="badge-item">
-                        <img src='{{"/assets/images/badges/nitro.webp"|relative_url}}' alt="" />
-                    </div>
-                    <div class="badge-item">
-                        <img src='{{"/assets/images/badges/boost.webp"|relative_url}}' alt="" />
-                    </div>
-                </div>
-            </div>
-            <div class="profile-body">
-                <div class="username">kurages<span>#0255</span></div>
-                <hr />
-                <div class="basic-infos">
-                    <div class="category-title">About Me</div>
-                    <p>Your about me description.</p>
-                </div>
-                <div class="basic-infos">
-                    <div class="category-title">Member Since</div>
-                    <p>2022.07.24</p>
-                </div>
-                <div class="note">
-                    <div class="category-title">Note</div>
-                    <textarea readonly>くらげちゃんだお</textarea>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% for user in site.data.admins %}
+    {% include discord-card.html user=user %}
+    {% endfor %}
 </div>
 
