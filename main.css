@@ -3,6 +3,7 @@ body {
   background-image: url(background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .top-text {
     color: #99aab5;
