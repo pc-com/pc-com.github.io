@@ -1,175 +1,198 @@
 @import "fonts.css";
 
-.card {
-	.card-header {
-		.banner {
-			width: 100%;
-			height: 60px;
-			background: #ff8527;
-			border-radius: 6px 6px 0 0;
-			overflow: hidden;
+.card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1450px;
+	z-index: 0;
+
+	.card {
+		.card-header {
+			.banner {
+				width: 100%;
+				height: 60px;
+				background-color: #ff8527;
+				border-radius: 6px 6px 0 0;
+				overflow: hidden;
+			}
+
+			.banner-img {
+				width: 100%;
+				height: 120px;
+				background-position: center !important;
+				background-size: 100% auto !important;
+				border-radius: 6px 6px 0 0;
+				overflow: hidden;
+			}
 		}
 
-		.banner-img {
-			width: 100%;
-			height: 120px;
-			background-position: center !important;
-			background-size: 100% auto !important;
-			border-radius: 6px 6px 0 0;
-			overflow: hidden;
-		}
-	}
-
-	.card-body {
-		padding: 15px;
-		position: relative;
-
-		.profile-header {
+		.tooltip {
+			display: block;
 			position: absolute;
-			display: flex;
-			flex-direction: row;
-			align-items: flex-end;
-			justify-content: space-between;
-			width: calc(100% - 30px);
-			top: -50px;
+			color: #b6b7b7;
+			background: #18191c;
+			padding: 0.4rem;
+			border-radius: 3px;
+			max-width: 150px;
+			width: max-content;
+			font-size: 0.9rem;
+			transform: scale(0);
+			transition: 0.055s ease-in-out transform;
+			z-index: 10;
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+			-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+		}
 
-			.profile-logo {
-				position: relative;
-				border: 6px solid #292b2f;
-				border-radius: 50%;
+		.tooltip-up {
+			bottom: 42px;
 
-				img {
-					display: block;
-					width: 80px;
-					height: 80px;
-					border-radius: 50%;
-				}
-			}
-
-			.badges-container {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: flex-end;
-				max-width: 150px;
-				background: #18191c;
-				border-radius: 7px;
-				padding: 3px;
-
-				.badge-item {
-					position: relative;
-					margin: 5px;
-					width: 15px;
-					height: 15px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					cursor: pointer;
-				}
+			&before {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0;
+				height: 0;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid #18191c;
 			}
 		}
 
-		.profile-body {
-			.username {
-				color: #eeeeee;
-				margin-bottom: 13px;
-				font-weight: 600;
-				font-size: 1.3rem;
+		.card-body {
+			padding: 15px;
+			position: relative;
+
+			.profile-header {
+				position: absolute;
 				display: flex;
 				flex-direction: row;
-				align-items: center;
+				align-items: flex-end;
+				justify-content: space-between;
+				width: calc(100% - 30px);
+				top: -50px;
 
-				span {
-					color: #b9bbbe;
+				.profile-logo {
+					position: relative;
+					border: 6px solid #292b2f;
+					border-radius: 50%;
+
+					img {
+						display: block;
+						width: 80px;
+						height: 80px;
+						border-radius: 50%;
+					}
 				}
 
-				.badge {
-					font-size: 0.65rem;
-					background-color: #5865f2;
-					text-transform: uppercase;
-					font-weight: 300;
-					width: max-content;
-					padding: 2px 5px;
-					margin-left: 5px;
-					border-radius: 3px;
-				}
-			}
+				.badges-container {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-end;
+					max-width: 150px;
+					background-color: #18191c;
+					border-radius: 7px;
+					padding: 3px;
 
-			hr {
-				border: none;
-				border-top: 0.5px solid #33353b;
-			}
-
-			.category-title {
-				color: white;
-				font-weight: 700;
-				text-transform: uppercase;
-				font-size: 0.8rem;
-				margin-bottom: 8px;
-			}
-
-			.basic-infos {
-				margin-bottom: 14px;
-				margin-top: 12px;
-
-				p {
-					color: #bdbebf;
-					font-size: 0.9rem;
-				}
-
-				a {
-					color: #02a5e6;
-					text-decoration: none;
+					.badge-item {
+						position: relative;
+						margin: 5px;
+						width: 15px;
+						height: 15px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						cursor: pointer;
+					}
 				}
 			}
 
-			.note {
-				textarea {
-					border: none;
-					outline: none;
-					background: transparent;
-					width: 100%;
-					min-height: 30px;
-					color: #e0e0e0;
-					resize: none;
-					font-size: 0.8rem;
-					border-radius: 3px;
-					padding: 5px;
-					box-sizing: border-box;
-					scrollbar-width: none;
-				}
-			}
-
-			.message {
-				input {
-					background: transparent;
-					outline: none;
-					border: 1.2px solid #4b4b4b;
-					padding: 13px;
-					width: 100%;
-					border-radius: 4px;
+			.profile-body {
+				.username {
 					color: #eeeeee;
-					margin-top: 14px;
+					margin-bottom: 13px;
+					font-weight: 600;
+					font-size: 1.3rem;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					span {
+						color: #b9bbbe;
+					}
+
+					.badge {
+						font-size: 0.65rem;
+						background-color: #5865f2;
+						text-transform: uppercase;
+						font-weight: 300;
+						width: max-content;
+						padding: 2px 5px;
+						margin-left: 5px;
+						border-radius: 3px;
+					}
+				}
+
+				hr {
+					border: none;
+					border-top: 0.5px solid #33353b;
+				}
+
+				.category-title {
+					color: white;
+					font-weight: 700;
+					text-transform: uppercase;
+					font-size: 0.8rem;
+					margin-bottom: 8px;
+				}
+
+				.basic-infos {
+					margin-bottom: 14px;
+					margin-top: 12px;
+
+					p {
+						color: #bdbebf;
+						font-size: 0.9rem;
+					}
+
+					a {
+						color: #02a5e6;
+						text-decoration: none;
+					}
+				}
+
+				.note {
+					textarea {
+						border: none;
+						outline: none;
+						background-color: transparent;
+						width: 100%;
+						min-height: 30px;
+						color: #e0e0e0;
+						resize: none;
+						font-size: 0.8rem;
+						border-radius: 3px;
+						padding: 5px;
+						box-sizing: border-box;
+						scrollbar-width: none;
+					}
+				}
+
+				.message {
+					input {
+						background-color: transparent;
+						outline: none;
+						border: 1.2px solid #4b4b4b;
+						padding: 13px;
+						width: 100%;
+						border-radius: 4px;
+						color: #eeeeee;
+						margin-top: 14px;
+					}
 				}
 			}
 		}
-	}
-}
-
-/* Media Queries */
-@media screen and (max-width: 1470px) {
-	.card-container {
-		width: 1100px;
-	}
-}
-
-@media screen and (max-width: 1150px) {
-	.card-container {
-		width: 720px;
-	}
-}
-
-@media screen and (max-width: 770px) {
-	.card-container {
-		width: max-content;
 	}
 }
