@@ -281,3 +281,60 @@
 		}
 	}
 }
+
+.nitro-card {
+	position: relative;
+	background-image: linear-gradient(0, #05172e, #114aa7);
+	background-blend-mode: multiply;
+	background-color: #0000006c;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -5px;
+		border-radius: 12px;
+		background: linear-gradient(0, #05172e, #114aa7);
+	}
+
+	.card-body {
+		.profile-body {
+			background: #18191c91;
+		}
+
+		.profile-header {
+			.profil-logo {
+				position: relative;
+				border-color: transparent;
+				z-index: 0;
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: -1;
+					margin: -6px;
+					border-radius: 50%;
+					background-color: #082553;
+				}
+			}
+
+			.badges-container {
+				background: #18191c77;
+			}
+		}
+
+		.profile-body .roles .roles-list .role {
+			background: #18191c4d;
+			border: 1px solid #3f4149;
+		}
+	}
+}
+
