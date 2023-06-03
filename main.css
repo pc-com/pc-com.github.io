@@ -198,41 +198,6 @@ body {
   }
 }
 /*news*/
-.page-header {
-    display: flex;
-    justify-content: space-between;
-}
-.logo {
-    width: 210px;
-    margin-top: 14px;
-}
-.main-nav {
-    display: flex;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    margin-top: 34px;
-    list-style: none;
-}
-.main-nav li {
-    margin-left: 36px;
-}
-.main-nav a {
-    color: #432;
-}
-.main-nav a:hover {
-    color: #0bd;
-}
-/*-------------------------*/
 #news {
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-}
-#news .page-title {
-    text-align: center;
-}
-.news-contents {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  background-color: #313338;
 }
