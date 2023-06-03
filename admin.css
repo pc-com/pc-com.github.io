@@ -437,7 +437,7 @@ html {
   z-index: -1;
   margin: -6px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #ff236b;
 }
 
 .nitro-card .card-body .profile-header .badges-container {
