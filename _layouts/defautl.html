@@ -10,29 +10,26 @@
 	<meta content="#3fc3ff" data-react-helmet="true" name="theme-color" />
 
 	<title>💻【パソコミ】💻パソコンコミュニティ</title>
-	<link rel="icon" href="back.png" />
-	<link rel="apple-touch-icon" href="back.png" />
+	<link rel="icon" href='{{"/assets/images/back.png"|relative_url}}' />
+	<link rel="apple-touch-icon" href='{{"/assets/images/back.png"|relative_url}}' />
 
 	<link rel="stylesheet" href='{{"/assets/css/style.css"|relative_url}}'>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header class="header01">
-		<h1 class="header01-logo"><a href="index.html"><img src="back.png" alt="アイコン" width="8%"></a></h1>
+		<h1 class="header01-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
 		<nav class="header01-nav">
 			<ul class="header01-list">
-				<li class="header01-item"><a href="news.html">お知らせ</a></li>
+				<li class="header01-item"><a href='{{"/news"|relative_url}}'>お知らせ</a></li>
 				<li class="header01-item"><a href="">運営紹介</a></li>
 				<li class="header01-item"><a href="">その他</a></li>
 				<li class="header01-item header01-item--contact"><a href="https://discord.gg/uxENZNrk5n">参加</a></li>
 			</ul>
 		</nav>
 	</header>
-	<div class="wrap">
-		<p class="typing">パソコンコミュニティーではプログラミングや、パソコン関係の情報共有や質問、雑談 etc..ができる鯖です。あなたも参加してみては？</p>
-		<script src="main.js"></script>
-	</div>
+	<main>
 	{{content}}
+	</main>
 </body>
-
 </html>
