@@ -1,7 +1,7 @@
-<div class="card nitro-card" style="background-image: linear-gradient({{user.color.primary}}, {{user.color.accent}});">
+<div class="card nitro-card" style="background-image: linear-gradient({{include.user.color.primary}}, {{include.user.color.accent}});">
 	<div class="card-header">
-		<div class="banner" style="background-color: {{ user.banner.color | default: '#FFF' }};">
-			{% if user.banner.url %}<img class="banner-img" src="{{ user.banner.url }}"></img>{% endif %}
+		<div class="banner" style="background-color: {{ include.user.banner.color | default: '#FFF' }};">
+			{% if include.user.banner.url %}<img class="banner-img" src="{{ include.user.banner.url }}"></img>{% endif %}
 		</div>
 	</div>
 	<div class="card-body">
