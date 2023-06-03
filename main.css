@@ -197,3 +197,17 @@ body {
     opacity:1
   }
 }
+/*news*/
+#news {
+    background-image: url(background.png);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news .page-title {
+    text-align: center;
+}
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
