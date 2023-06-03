@@ -78,8 +78,8 @@ body {
       padding: 1rem; } }
 /*タイピング風用*/
 .wrap {
-  margin: 0 auto　80px;
-  max-width: 300px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .wrap p {
  text-align: center;
