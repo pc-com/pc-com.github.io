@@ -1,10 +1,10 @@
 /*ヘッダー*/
 .header {
 	padding: 10px 20px;
-	background-color: #313338;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: map-get($map: "bg-accent", $key: $colors);
 
 	.header-logo {
 		font-weight: bold;
