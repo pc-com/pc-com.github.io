@@ -19,7 +19,7 @@
 	<script src='{{"/assets/js/" | append: file |relative_url}}'></script>
 	{% endfor %}
 </head>
-<body>
+<body {% if page.style %}style="{{ page.style }}"{% endif %}>
 	<header>
 		<div class="header">
 			<h1 class="header-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
