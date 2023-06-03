@@ -127,7 +127,19 @@
 		border-radius: 7px;
 		padding: 13px;
 		margin-top: 40px;
+		.displayname {
+			color: #eeeeee;
+			margin-bottom: 20px;
+			font-weight: 600;
+			font-size: 1.3rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 
+			span {
+				color: #b9bbbe;
+			}
+		}
 		.username {
 			color: #eeeeee;
 			margin-bottom: 13px;
