@@ -5,31 +5,7 @@ body {
   background-size: cover;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
   margin: 0;
   padding: 0;
 }
@@ -58,22 +34,15 @@ var {
   font-weight: normal;
 }
 
-ol,
-ul {
+ol,ul {
   list-style: none;
 }
 
-caption,
-th {
+caption,th {
   text-align: left;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -97,10 +66,7 @@ sub {
   vertical-align: text-bottom;
 }
 
-input,
-textarea,
-select,
-button {
+input,textarea,select,button {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -113,31 +79,23 @@ button {
   -webkit-appearance: none;
   background-color: inherit;
 }
-
-input,
-textarea,
-select {
+input,textarea,select {
   font-size: 16px;
 }
-
 textarea {
   resize: vertical;
   display: block;
 }
-
 button {
   padding: 0;
   cursor: pointer;
 }
-
 legend {
   color: #000;
 }
-
 main {
   display: block;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -148,29 +106,19 @@ img {
   height: auto;
   vertical-align: bottom;
 }
-
 svg {
   display: block;
 }
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 /* ------------------------------ */
-/* 全体共通のスタイル */
-/* ------------------------------ */
-html {
-  background-color: #fff;
-}
-
 body {
   line-height: 1.75;
   font-size: 16px;
@@ -182,7 +130,6 @@ body {
     font-size: 18px;
   }
 }
-
 .main {
   width: 90%;
   max-width: 960px;
