@@ -3,35 +3,45 @@
   name: "えま\\k"
   icon: "https://cdn.discordapp.com/avatars/864735082732322867/2390555f2f80bd5c0440568acfe7314f.png"
   comment: "ちんぽにゃ!!"
-  since: "2017.04.24"
+  since: "Apr 24, 2017"
   banner:
     color: "#ff236c"
   color:
     primary: "#ff236b"
     accent: "#a238ff"
 
-- id: "るな"
-  tag: "#0256"
-  name: "ベイブレードるな"
-  icon: "https://cdn.discordapp.com/avatars/510590521811402752/a_a27ee71ef4f7f45ee75f85a502ee3fc4.gif"
-  comment: "るなたんだお♡"
-  since: "2018.11.10"
-  banner:
-    color: "#55a4ff"
-  color:
-    primary: "#55a4ff"
-    accent: "#9c999a"
-
 - id: "kurages"
   tag: "#0255"
   name: "ベイブレードもやし猫"
   icon: "https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp"
   comment: "くらげちゃんだおはーと"
-  since: "2022.07.24"
+  since: "Jul 24, 2022"
   banner:
     color: "#57a5ff"
   color:
     primary: "#55a4ff"
     accent: "#9c999a"
 
-
+- id: "MasatoSiraisi"
+  tag: "#7835"
+  name: "MasatoSiraisi"
+  icon: "https://cdn.discordapp.com/avatars/1060601064488972348/a990d5c79b3af15228914c6ecfaca68c.png"
+  comment: "女装未遂音ゲーマー"
+  since: "Jan 15, 2019"
+  banner:
+    color: "#3e89b5"
+  color:
+    primary: "#58a1a3"
+    accent: "#586ea3"
+    
+- id: "Nikochan2525"
+  tag: "#0162"
+  name: "Nikochan/最も親切なブルスク"
+  icon: "https://cdn.discordapp.com/avatars/691203459269001216/946d303a239766d284e48c998cdfadcb.png"
+  comment: ":( Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you."
+  since: "Jan 15, 2019"
+  banner:
+    color: "#2048a8"
+  color:
+    primary: "#232429"
+    accent: "#232429"
