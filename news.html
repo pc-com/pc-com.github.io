@@ -2,6 +2,13 @@
 layout: default
 title: お知らせ
 id: news
+scripts: news.js
 ---
-
-
+<main id="information">
+	<div class="wrapper">
+		<h1>お知らせ</h1>
+		{% for content in site.data.news %}
+		{% include news-card.html content=content %}
+		{% endfor %}
+	</div>
+</main>

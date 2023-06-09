@@ -1,0 +1,28 @@
+@import "breakpoints/variables.scss";
+@import "card.scss";
+@import "breakpoints/functions.scss";
+@import "grids/grid.scss";
+
+$utilities: (
+	(
+		property: display,
+		class: d,
+		values: none block inline-block inline flex inline-flex grid inline-grid
+	),
+);
+
+@each $utility in $utilities {
+	$property: map-get($utility, property);
+	$class: map-get($utility, class);
+
+	@each $breakpoint, $_ in $breakpoints {
+		$infix: breakpoint-infix($breakpoint);
+		@each $value in map-get($utility, values) {
+			@include media-breakpoint-up($breakpoint){
+				.#{$class}#{$infix}-#{$value} {
+					#{$property}: #{$value};
+				}
+			}
+		}
+	}
+}

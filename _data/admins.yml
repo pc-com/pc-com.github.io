@@ -1,18 +1,18 @@
 - id: "えま"
   tag: "#7000"
-  name: "えま\\\\k"
+  name: "429. Too Many Requests"
   icon: "https://cdn.discordapp.com/avatars/864735082732322867/2390555f2f80bd5c0440568acfe7314f.png"
   comment: "ちんぽにゃ!!"
   since: "Apr 24, 2017"
   banner:
-    color: "#ff236c"
+    color: "#fb5a5a"
   color:
-    primary: "#ff236b"
-    accent: "#a238ff"
+    primary: "#fb5a5a"
+    accent: "#ff2c80"
 
 - id: "kurages"
   tag: "#0255"
-  name: "ベイブレードもやし猫"
+  name: "もやし猫@麻雀牌人"
   icon: "https://cdn.discordapp.com/avatars/1000436365269422170/47e94a1728cd3544c1be256f2c2baa72.webp"
   comment: "くらげちゃんだおはーと"
   since: "Jul 24, 2022"
@@ -25,7 +25,7 @@
 - id: "MasatoSiraisi"
   tag: "#7835"
   name: "MasatoSiraisi"
-  icon: "https://cdn.discordapp.com/avatars/1060601064488972348/a990d5c79b3af15228914c6ecfaca68c.png"
+  icon: "https://cdn.discordapp.com/avatars/1060601064488972348/a990d5c79b3af15228914c6ecfaca68c.webp"
   comment: "女装未遂音ゲーマー"
   since: "Jan 15, 2019"
   banner:
@@ -33,13 +33,13 @@
   color:
     primary: "#58a1a3"
     accent: "#586ea3"
-    
+
 - id: "Nikochan2525"
   tag: "#0162"
   name: "Nikochan/最も親切なブルスク"
-  icon: "https://cdn.discordapp.com/avatars/691203459269001216/946d303a239766d284e48c998cdfadcb.png"
+  icon: "https://cdn.discordapp.com/avatars/691203459269001216/946d303a239766d284e48c998cdfadcb.webp"
   comment: ":( Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you."
-  since: "Jan 15, 2019"
+  since: "Mar 22, 2020"
   banner:
     color: "#2048a8"
   color:

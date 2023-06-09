@@ -3,7 +3,7 @@
 	flex-direction: row;
 	// justify-content: space-between;
 	justify-content: center;
-	z-index: 0;
+	//z-index: -1;
 }
 
 .card {
@@ -306,7 +306,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		z-index: -1;
+		//z-index: -11;
 		margin: -5px;
 		border-radius: 12px;
 		/*background: linear-gradient(0, #05172e, #114aa7);*/
@@ -321,7 +321,7 @@
 			.profile-logo {
 				position: relative;
 				border-color: transparent;
-				z-index: 0;
+				//z-index: -1;
 
 				&:after {
 					content: "";
@@ -330,7 +330,7 @@
 					right: 0;
 					bottom: 0;
 					left: 0;
-					z-index: -1;
+					//z-index: -11;
 					margin: -6px;
 					border-radius: 50%;
 					background-color: transparent;

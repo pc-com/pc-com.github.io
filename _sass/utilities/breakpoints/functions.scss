@@ -1,0 +1,90 @@
+@function breakpoint-next($name) {
+	$breakpoint-names: map-keys($breakpoints);
+	$n: index($breakpoint-names, $name);
+
+	@return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+// 最小値
+@function breakpoint-min($name) {
+	$min: map-get($breakpoints, $name);
+	@return if($min !=0, $min, null);
+}
+
+// 最大値
+// 0.02はsafari対策
+@function breakpoint-max($name) {
+	$max: map-get($breakpoints, $name);
+	@return if($max and $max > 0, $max - .02, null);
+}
+
+@function breakpoint-infix($name) {
+	@return if(breakpoint-min($name)==null, "", "-#{$name}");
+}
+
+// 指定した閾値以上にスタイルを当てる
+@mixin media-breakpoint-up($name) {
+	$min: breakpoint-min($name);
+
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// 指定した閾値以下にスタイルをあてる
+@mixin media-breakpoint-down($name) {
+	$max: breakpoint-max($name);
+
+	@if $max {
+		@media (max-width: $max) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// lowerからupperにあてる
+@mixin media-breakpoint-between($lower, $upper) {
+	$min: breakpoint-min($lower, $breakpoints);
+	$max: breakpoint-max($upper, $breakpoints);
+
+	@if $min !=null and $max !=null {
+		@media (min-width: $min) and (max-width: $max) {
+			@content;
+		}
+	} @else if $max == null {
+		@include media-breakpoint-up($lower, $breakpoints) {
+			@content;
+		}
+	} @else if $min == null {
+		@include media-breakpoint-down($upper, $breakpoints) {
+			@content;
+		}
+	}
+}
+
+// 指定した閾値の範囲にのみあてる
+@mixin media-breakpoint-only($name) {
+	$min: breakpoint-min($name);
+	$next: breakpoint-next($name);
+	$max: breakpoint-max($next);
+
+	@if $min !=null and $max !=null {
+		@media (min-width: $min) and (max-width: $max) {
+			@content;
+		}
+	} @else if $max == null {
+		@include media-breakpoint-up($name) {
+			@content;
+		}
+	} @else if $min == null {
+		@include media-breakpoint-down($next) {
+			@content;
+		}
+	}
+}

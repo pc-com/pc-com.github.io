@@ -12,9 +12,10 @@
 	<title>{{ page.title }} | 💻【パソコミ】💻パソコンコミュニティ</title>
 	<link rel="icon" href='{{"/assets/images/back.png"|relative_url}}' />
 	<link rel="apple-touch-icon" href='{{"/assets/images/back.png"|relative_url}}' />
-
+	<script src="https://cdn.jsdelivr.net/npm/marked@4/marked.min.js"></script>
 	<link rel="stylesheet" href='{{"/assets/css/style.css"|relative_url}}'>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src='{{"/assets/js/navber.js" |relative_url}}'></script>
 	{% for file in page.scripts %}
 	<script src='{{"/assets/js/" | append: file |relative_url}}'></script>
 	{% endfor %}
@@ -32,11 +33,12 @@
 	<header>
 		<div class="header">
 			<h1 class="header-logo"><a href='{{"/"|relative_url}}'><img src='{{"/assets/images/back.png"|relative_url}}' alt="アイコン" width="8%"></a></h1>
-			<nav class="header-nav">
+			<button class="d-block d-md-none menu-icon" id="mobile-menu" data-display="-1"><span></span><span></span><span></span></button>
+			<nav class="header-nav d-none d-md-block mobile-menu">
 				<ul class="header-list">
 					<li class="header-item"><a href='{{"/news"|relative_url}}'>お知らせ</a></li>
 					<li class="header-item"><a href='{{"/admin"|relative_url}}'>運営紹介</a></li>
-					<li class="header-item"><a href="">その他</a></li>
+					<li class="header-item"><a href='{{"/other"|relative_url}}'>その他</a></li>
 					<li class="header-item header-item-contact"><a href="https://discord.gg/uxENZNrk5n">参加</a></li>
 				</ul>
 			</nav>

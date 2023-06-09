@@ -1,0 +1,19 @@
+
+@mixin mb {
+	@media screen and (max-width: 599px) {
+		@content;
+	}
+}
+
+@mixin tabletView {
+	@media screen and (max-width: 1024px) and (min-width: 600px) {
+		@content;
+	}
+}
+
+@mixin pcView {
+	@media screen and (min-width: 1025px) {
+		@content;
+	}
+}
+

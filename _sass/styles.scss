@@ -1,7 +1,10 @@
-@import "reset.scss";
-
+@import "_reset.scss";
+@import "_font.scss";
 
 @import "config.scss";
+
+// utilities
+@import "utilities/utilities.scss";
 
 @import "base.scss";
 @import "header.scss";
@@ -11,6 +14,3 @@
 @import "pages/admin.scss";
 @import "pages/news.scss";
 
-// utilities
-@import "utilities/card.scss";
-@import "utilities/font.scss";

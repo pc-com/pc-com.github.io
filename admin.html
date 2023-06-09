@@ -3,7 +3,7 @@ layout: default
 title: 運営紹介
 id: admin
 ---
-<div class="card-container">
+<div class="card-container row">
     {% for user in site.data.admins %}
     {% include discord-card.html user=user %}
     {% endfor %}
