@@ -34,7 +34,7 @@
 		border-radius: 6px;
 	}
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(md) {
 		.menu-icon {
 			display: block;
 			position: absolute;
