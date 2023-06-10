@@ -90,7 +90,9 @@
 			background-color: #495057;
 			opacity: 1;
 			animation: fadeIn 0.3s ease-in 0s forwards;
-			padding: 20vh;
+			padding-top: 20vh;
+			padding-left: 0%;
+			padding-right: 0%;
 		}
 		.header-list {
 			display: flex;
@@ -99,10 +101,11 @@
 		}
 
 		.header-item {
-			font-size: 20px;
+			font-size: 30px;
 			font-weight: inherit;
 			margin-top: 5vh;
 			padding: 5px;
+			width: 90vw;
 		}
 	}
 	@keyframes fadeIn {
