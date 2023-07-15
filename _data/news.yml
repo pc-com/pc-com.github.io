@@ -1,3 +1,14 @@
+- id: 3
+  title: 1000人超えたらしい
+  date: "2023-07-16"
+  url: "https://discord.com/channels/932529116400459786/"
+  tags:
+    - a
+    - b
+    - c
+  comment: |
+    __1000人超えたらしいです。以上です__
+
 - id: 2
   title: 規制のお知らせ
   date: "2023-06-05"
